@@ -2,8 +2,8 @@ def discounted(price, discount, max_discount = 50):
     price = abs(float(price))
     discount = abs(float(discount))
     max_discount = abs(float(max_discount))
-    if max_discount > 99:
-        raise ValueError('Максимальная скидка не может быть 99')
+    if max_discount > 70:
+        raise ValueError('Максимальная скидка не может быть больше 70%')
     if discount >= max_discount:
         price_with_discount = price
     else:
@@ -13,4 +13,4 @@ def discounted(price, discount, max_discount = 50):
 
 
 print(discounted(100, 40))
-print('Hello')
+print('Hello world')
