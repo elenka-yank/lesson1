@@ -1,0 +1,1 @@
+print ("It's my new script")
